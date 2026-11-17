@@ -1,0 +1,5 @@
+landscapeLeft: Windows rotation 0°, expected 0° — PASS
+portrait: Windows rotation 90°, expected 90° — PASS
+landscapeRight: Windows rotation 180°, expected 180° — PASS
+portraitUpsideDown: Windows rotation 270°, expected 270° — PASS
+Regression reproduced: old landscapeRight label overrides numeric 0° with 180°.

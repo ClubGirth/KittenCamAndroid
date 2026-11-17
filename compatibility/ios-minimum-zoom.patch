@@ -1,0 +1,33 @@
+--- a/CameraCommandServer.swift
++++ b/CameraCommandServer.swift
+@@ -21,6 +21,8 @@
+     let message: String
+ 
+     let zoom: Double
++    let minimumZoom: Double
++    let maximumZoom: Double
+     let torchEnabled: Bool
+     let torchLevel: Float
+ 
+@@ -528,6 +530,8 @@
+             success: true,
+             message: message,
+             zoom: Double(camera.zoomLevel),
++            minimumZoom: Double(camera.minimumZoom),
++            maximumZoom: Double(camera.maximumZoom),
+             torchEnabled: camera.torchEnabled,
+             torchLevel: camera.torchLevel,
+             resolution: camera.selectedResolution.rawValue,
+--- a/ViewingDeviceView.swift
++++ b/ViewingDeviceView.swift
+@@ -399,8 +399,8 @@
+     private var zoomButtons: some View {
+         HStack(spacing: 8) {
+             presetButton(
+-                title: "0.5×",
+-                zoom: 0.5
++                title: String(format: "%g×", Double(camera.minimumZoom)),
++                zoom: camera.minimumZoom
+             )
+ 
+             presetButton(

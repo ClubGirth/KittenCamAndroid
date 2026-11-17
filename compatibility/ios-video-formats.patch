@@ -1,0 +1,41 @@
+--- a/CameraCommandServer.swift
++++ b/CameraCommandServer.swift
+@@ -16,6 +16,13 @@
+     let fps: Int?
+ }
+ 
++struct CameraVideoFormatResponse: Encodable {
++    let resolution: String
++    let width: Int
++    let height: Int
++    let fps: [Int]
++}
++
+ struct CameraStatusResponse: Encodable {
+     let success: Bool
+     let message: String
+@@ -26,6 +33,7 @@
+ 
+     let resolution: String
+     let fps: Int
++    let supportedVideoFormats: [CameraVideoFormatResponse]
+ 
+     let microphoneEnabled: Bool
+     let microphoneAuthorized: Bool
+@@ -532,6 +540,16 @@
+             torchLevel: camera.torchLevel,
+             resolution: camera.selectedResolution.rawValue,
+             fps: camera.selectedFPS,
++            supportedVideoFormats: VideoResolution.allCases.compactMap { resolution -> CameraVideoFormatResponse? in
++                let rates = camera.availableFrameRates(for: resolution)
++                guard !rates.isEmpty else { return nil }
++                return CameraVideoFormatResponse(
++                    resolution: resolution.rawValue,
++                    width: Int(resolution.width),
++                    height: Int(resolution.height),
++                    fps: rates
++                )
++            },
+             microphoneEnabled:
+                 camera.microphoneEnabled,
+             microphoneAuthorized:

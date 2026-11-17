@@ -1,0 +1,21 @@
+model=SM-G998U1 zoom=[1.0, 8.0] fpsRanges=[[7, 10], [10, 10], [7, 14], [14, 14], [15, 15], [7, 24], [24, 24], [7, 30], [30, 30]] torchStrength=false sizes=[4000x3000, 4000x2252, 4000x1800, 4000x1716, 3840x2160, 2992x2992, 2400x1080, 1920x1440, 1920x1080, 1920x824, 1440x1080, 1280x720, 1088x1088, 960x720, 720x480, 640x480, 640x360, 352x288, 320x240, 176x144]
+zoomRequested=0.5 applied=1.0
+zoomRequested=1.0 applied=1.0
+zoomRequested=3.0 applied=3.0
+torch=on/off passed
+720p@24 encoding started 1280x720
+720p@30 encoding started 1280x720
+720p@50 rejected: Frame rate unavailable at 720p
+720p@60 rejected: Frame rate unavailable at 720p
+1080p@24 encoding started 1920x1080
+1080p@30 encoding started 1920x1080
+1080p@50 rejected: Frame rate unavailable at 1080p
+1080p@60 rejected: Frame rate unavailable at 1080p
+1440p@24 rejected: This camera does not support 1440p
+1440p@30 rejected: This camera does not support 1440p
+1440p@50 rejected: This camera does not support 1440p
+1440p@60 rejected: This camera does not support 1440p
+4K@24 encoding started 3840x2160
+4K@30 encoding started 3840x2160
+4K@50 rejected: Frame rate unavailable at 4K
+4K@60 rejected: Frame rate unavailable at 4K

@@ -1,0 +1,4 @@
+camera=0 facing=1 focal=[6.7] sensorSize=9.6x7.2 digitalMax=8.0 zoomRatio=[1.0, 8.0] physicalIds=[]
+camera=1 facing=0 focal=[3.8] sensorSize=5.1072x3.8304 digitalMax=8.0 zoomRatio=[1.0, 8.0] physicalIds=[]
+camera=2 facing=1 focal=[2.2] sensorSize=5.6x4.2 digitalMax=8.0 zoomRatio=[1.0, 8.0] physicalIds=[]
+camera=3 facing=0 focal=[3.8] sensorSize=4.5024x3.0912 digitalMax=8.0 zoomRatio=[1.0, 8.0] physicalIds=[]

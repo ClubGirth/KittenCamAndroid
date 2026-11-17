@@ -1,0 +1,9 @@
+{
+  "zoom": 0.6,
+  "minimumZoom": 0.6,
+  "maximumZoom": 8,
+  "activeCameraId": "2",
+  "lensSwitching": false,
+  "resolution": "1080p",
+  "fps": 30
+}

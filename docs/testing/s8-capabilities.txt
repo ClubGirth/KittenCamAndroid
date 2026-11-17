@@ -1,0 +1,21 @@
+model=SM-G955U zoom=digital 1–8.0 fpsRanges=[[15, 15], [20, 20], [24, 24], [7, 30], [30, 30]] torchStrength=false sizes=[4032x3024, 4032x2268, 3984x2988, 3264x2448, 3264x1836, 3024x3024, 2976x2976, 2880x2160, 2560x1920, 2560x1440, 2560x1080, 2448x2448, 2160x2160, 2048x1152, 1920x1080, 1440x1080, 1280x960, 1280x720, 720x480, 640x480, 320x240, 176x144]
+zoomRequested=0.5 applied=1.0
+zoomRequested=1.0 applied=1.0
+zoomRequested=3.0 applied=3.0
+torch=on/off passed
+720p@24 encoding started 1280x720
+720p@30 encoding started 1280x720
+720p@50 rejected: Frame rate unavailable through this camera's exposure controls: 50 FPS
+720p@60 rejected: Frame rate unavailable through this camera's exposure controls: 60 FPS
+1080p@24 encoding started 1920x1080
+1080p@30 encoding started 1920x1080
+1080p@50 rejected: Frame rate unavailable through this camera's exposure controls: 50 FPS
+1080p@60 rejected: Frame rate unavailable through this camera's exposure controls: 60 FPS
+1440p@24 encoding started 2560x1440
+1440p@30 encoding started 2560x1440
+1440p@50 rejected: Frame rate unavailable through this camera's exposure controls: 50 FPS
+1440p@60 rejected: Frame rate unavailable through this camera's exposure controls: 60 FPS
+4K@24 rejected: This camera does not support 4K
+4K@30 rejected: This camera does not support 4K
+4K@50 rejected: This camera does not support 4K
+4K@60 rejected: This camera does not support 4K

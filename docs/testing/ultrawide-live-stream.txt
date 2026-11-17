@@ -1,0 +1,2 @@
+PASS: main camera=0 focal=6.7; wide camera=2 focal=2.2; displayed minimum=0.6; native wide zoom=1.0; live decoder resumed; 1x/3x returned to main
+PASS: main camera=0 focal=6.7; wide camera=2 focal=2.2; displayed minimum=0.6; native wide zoom=1.0; live decoder resumed; 1x/3x returned to main
